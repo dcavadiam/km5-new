@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Librería Online KM5</title>
     <link rel="icon" type="image/x-icon" href="../assets/favicon.png" />
+    <link rel="stylesheet" href="../global/style.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,13 +15,33 @@
     />
   </head>
   <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="logo-km5">
+        <img src="../assets/logo-km5.png" alt="logo km5" />
+      </div>
+      <a href="#">Novedades</a>
+      <a href="#">Senderos</a>
+      <a href="#">Top 10</a>
+      <a href="#">Nightstanders</a>
+      <div class="carrito">
+        <img
+          src="../assets/nav/carrito-de-compras.png"
+          alt="carro de compras"
+        />
+      </div>
+    </div>
+    <span class="button-sidenav" onclick="openNav()">&#9776;</span>
+
     <header>
       <nav class="navbar">
         <div class="logo-nav">
           <div class="logo-km5">
             <img src="../assets/logo-km5.png" alt="logo km5" />
           </div>
-          <ul class="page-list">
+          <ul class="page-list" id="Home">
             <li>
               <a class="black" href="">Novedades</a>
             </li>
@@ -43,507 +64,511 @@
         </div>
       </nav>
     </header>
-    <section class="banner-section">
-      <div class="texto-banner">
-        <h1>Lorem ipsum dolor sit</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Iste
-          voluptates earum deserunt maxime, neque nihil veniam ducimus sed
-          voluptatem voluptate.
-        </p>
-      </div>
-
-      <div class="books">
-        <img src="./../assets/inicio/image 2.png" alt="Libro 1" />
-        <img src="./../assets/inicio/image 2.png" alt="Libro 2" />
-        <img src="./../assets/inicio/image 2.png" alt="Libro 3" />
-        <img src="./../assets/inicio/image 2.png" alt="Libro 4" />
-        <img src="./../assets/inicio/image 2.png" alt="Libro 5" />
-        <img src="./../assets/inicio/image 2.png" alt="Libro 6" />
-        <img src="./../assets/inicio/image 2.png" alt="Libro 7" />
-        <img src="./../assets/inicio/image 2.png" alt="Libro 8" />
-        <img src="./../assets/inicio/image 2.png" alt="Libro 9" />
-        <img src="./../assets/inicio/image 2.png" alt="Libro 10" />
-      </div>
-    </section>
-    <section class="search-section">
-      <div class="busqueda-container">
-        <div class="info">
-          <h2>Busca y explora los diferentes libros que tenemos para ti</h2>
+    <main>
+      <!-- BANNER -->
+      <section class="banner-section">
+        <div class="texto-banner">
+          <h1>Lorem ipsum dolor sit</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit. Iste
             voluptates earum deserunt maxime, neque nihil veniam ducimus sed
-            voluptatem consequat natus.
+            voluptatem voluptate.
           </p>
-          <div class="inputs-container">
-            <input type="text" placeholder="Título" />
-            <input type="text" placeholder="Autor" />
-            <button>Buscar</button>
-          </div>
-          <a href="#">Búsqueda avanzada</a>
         </div>
-        <div class="imagen">
-          <img src="./../assets/inicio/Bibliophile-amico 1.png" alt="" />
+
+        <div class="books">
+          <img src="./../assets/inicio/image 2.png" alt="Libro 1" />
+          <img src="./../assets/inicio/image 2.png" alt="Libro 2" />
+          <img src="./../assets/inicio/image 2.png" alt="Libro 3" />
+          <img src="./../assets/inicio/image 2.png" alt="Libro 4" />
+          <img src="./../assets/inicio/image 2.png" alt="Libro 5" />
+          <img src="./../assets/inicio/image 2.png" alt="Libro 6" />
+          <img src="./../assets/inicio/image 2.png" alt="Libro 7" />
+          <img src="./../assets/inicio/image 2.png" alt="Libro 8" />
+          <img src="./../assets/inicio/image 2.png" alt="Libro 9" />
+          <img src="./../assets/inicio/image 2.png" alt="Libro 10" />
         </div>
-      </div>
-    </section>
-    <section class="categories-section">
-      <h2>Escoge la categoría que mejor se acomode a tus gustos</h2>
-      <div class="categories">
-        <button>Categoría 1</button>
-        <button>Categoría 2</button>
-        <button>Categoría 3</button>
-        <button>Categoría 4</button>
-        <button>Categoría 5</button>
-        <button>Categoría 6</button>
-        <button>Categoría 7</button>
-        <button>Categoría 8</button>
-      </div>
-
-      <div class="all-categories" id="allCategories">
-        <button>Categoría 9</button>
-        <button>Categoría 10</button>
-        <button>Categoría 11</button>
-        <button>Categoría 12</button>
-        <button>Categoría 13</button>
-        <button>Categoría 14</button>
-        <button>Categoría 15</button>
-        <button>Categoría 16</button>
-        <button>Categoría 17</button>
-        <button>Categoría 18</button>
-        <button>Categoría 19</button>
-        <button>Categoría 20</button>
-      </div>
-      <a id="toggleCategories">Ver todas las categorías ↓</a>
-    </section>
-    <!-- NOVEDADES -->
-    <section class="books-section">
-      <div class="books-section-title-seemore">
-        <h2>Novedades</h2>
-        <a href="#">Ver todas ></a>
-      </div>
-      <div class="books-container">
-        <div class="books-list">
-          <div
-            class="book"
-            style="background-image: url('./../assets/inicio/image 13.png')"
-          >
-            <h3>Título del libro</h3>
-            <p>Autor: John Doe<br />Precio: $0000000<br /></p>
-            <a href="#">Ver más ></a>
-          </div>
-
-          <div
-            class="book"
-            style="background-image: url('./../assets/inicio/image 13.png')"
-          >
-            <h3>Título del libro</h3>
-            <p>Autor: John Doe<br />Precio: $0000000<br /></p>
-            <a href="#">Ver más ></a>
-          </div>
-
-          <div
-            class="book"
-            style="background-image: url('./../assets/inicio/image 13.png')"
-          >
-            <h3>Título del libro</h3>
-            <p>Autor: John Doe<br />Precio: $0000000<br /></p>
-            <a href="#">Ver más ></a>
-          </div>
-
-          <div
-            class="book"
-            style="background-image: url('./../assets/inicio/image 13.png')"
-          >
-            <h3>Título del libro</h3>
-            <p>Autor: John Doe<br />Precio: $0000000<br /></p>
-            <a href="#">Ver más ></a>
-          </div>
-
-          <div
-            class="book"
-            style="background-image: url('./../assets/inicio/image 13.png')"
-          >
-            <h3>Título del libro</h3>
-            <p>Autor: John Doe<br />Precio: $0000000<br /></p>
-            <a href="#">Ver más ></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- MÁS VENDIDOS -->
-    <section class="books-section" id="best-sellers">
-      <h2>Más vendidos</h2>
-      <div class="books-container">
-        <div class="books-list">
-          <div class="book-card">
-            <div class="img-card">
-              <img
-                src="./../assets/inicio/imagen libro más vendido.png"
-                alt="Más vendido 1"
-              />
+      </section>
+      <!-- BUSQUEDA -->
+      <section class="search-section">
+        <div class="busqueda-container">
+          <div class="info">
+            <h2>Busca y explora los diferentes libros que tenemos para ti</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Iste
+              voluptates earum deserunt maxime, neque nihil veniam ducimus sed
+              voluptatem consequat natus.
+            </p>
+            <div class="inputs-container">
+              <input type="text" placeholder="Título" />
+              <input type="text" placeholder="Autor" />
+              <button>Buscar</button>
             </div>
-            <div class="info-card">
-              <p class="count">🛍️ 0.0k</p>
-              <h3 class="title">Título del libro</h3>
-              <p class="name">John Doe</p>
-              <p class="price">$ 0000</p>
-              <div class="buttons">
-                <button class="buy-button">Comprar</button>
-                <button class="car-button">Añadir a carrito</button>
-              </div>
+            <a href="#">Búsqueda avanzada</a>
+          </div>
+          <div class="imagen">
+            <img src="./../assets/inicio/Bibliophile-amico 1.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="categories-section">
+        <h2>Escoge la categoría que mejor se acomode a tus gustos</h2>
+        <div class="categories">
+          <button>Categoría 1</button>
+          <button>Categoría 2</button>
+          <button>Categoría 3</button>
+          <button>Categoría 4</button>
+          <button>Categoría 5</button>
+          <button>Categoría 6</button>
+          <button>Categoría 7</button>
+          <button>Categoría 8</button>
+        </div>
+
+        <div class="all-categories" id="allCategories">
+          <button>Categoría 9</button>
+          <button>Categoría 10</button>
+          <button>Categoría 11</button>
+          <button>Categoría 12</button>
+          <button>Categoría 13</button>
+          <button>Categoría 14</button>
+          <button>Categoría 15</button>
+          <button>Categoría 16</button>
+          <button>Categoría 17</button>
+          <button>Categoría 18</button>
+          <button>Categoría 19</button>
+          <button>Categoría 20</button>
+        </div>
+        <a id="toggleCategories">Ver todas las categorías ↓</a>
+      </section>
+      <!-- NOVEDADES -->
+      <section class="books-section">
+        <div class="books-section-title-seemore">
+          <h2>Novedades</h2>
+          <a href="#">Ver todas ></a>
+        </div>
+        <div class="books-container">
+          <div class="books-list" id="novedades">
+            <div
+              class="book"
+              style="background-image: url('./../assets/inicio/image 13.png')"
+            >
+              <h3>Título del libro</h3>
+              <p>Autor: John Doe<br />Precio: $0000000<br /></p>
               <a href="#">Ver más ></a>
             </div>
-          </div>
-          <div class="book-card">
-            <div class="img-card">
-              <img
-                src="./../assets/inicio/imagen libro más vendido.png"
-                alt="Más vendido 1"
-              />
-            </div>
-            <div class="info-card">
-              <p class="count">🛍️ 0.0k</p>
-              <h3 class="title">Título del libro</h3>
-              <p class="name">John Doe</p>
-              <p class="price">$ 0000</p>
-              <div class="buttons">
-                <button class="buy-button">Comprar</button>
-                <button class="car-button">Añadir a carrito</button>
-              </div>
+
+            <div
+              class="book"
+              style="background-image: url('./../assets/inicio/image 13.png')"
+            >
+              <h3>Título del libro</h3>
+              <p>Autor: John Doe<br />Precio: $0000000<br /></p>
               <a href="#">Ver más ></a>
             </div>
-          </div>
-          <div class="book-card">
-            <div class="img-card">
-              <img
-                src="./../assets/inicio/imagen libro más vendido.png"
-                alt="Más vendido 1"
-              />
+
+            <div
+              class="book"
+              style="background-image: url('./../assets/inicio/image 13.png')"
+            >
+              <h3>Título del libro</h3>
+              <p>Autor: John Doe<br />Precio: $0000000<br /></p>
+              <a href="#">Ver más ></a>
             </div>
-            <div class="info-card">
-              <p class="count">🛍️ 0.0k</p>
-              <h3 class="title">Título del libro</h3>
-              <p class="name">John Doe</p>
-              <p class="price">$ 0000</p>
-              <div class="buttons">
-                <button class="buy-button">Comprar</button>
-                <button class="car-button">Añadir a carrito</button>
-              </div>
+
+            <div
+              class="book"
+              style="background-image: url('./../assets/inicio/image 13.png')"
+            >
+              <h3>Título del libro</h3>
+              <p>Autor: John Doe<br />Precio: $0000000<br /></p>
+              <a href="#">Ver más ></a>
+            </div>
+
+            <div
+              class="book"
+              style="background-image: url('./../assets/inicio/image 13.png')"
+            >
+              <h3>Título del libro</h3>
+              <p>Autor: John Doe<br />Precio: $0000000<br /></p>
               <a href="#">Ver más ></a>
             </div>
           </div>
         </div>
-        <!-- <a href="#">Ver todas ></a> -->
-      </div>
-    </section>
-    <!-- PUBLISHERS -->
-    <section class="publishers-section">
-      <h2>Editoriales disponibles</h2>
-      <div class="slider">
-        <div class="slide-track">
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&amp;logo=figma&amp;logoColor=white"
-              alt="imageforslider"
-            />
+      </section>
+      <!-- MÁS VENDIDOS -->
+      <section class="books-section" id="best-sellers">
+        <h2>Más vendidos</h2>
+        <div class="books-container">
+          <div class="books-list" id="mas-vendidos">
+            <div class="book-card">
+              <div class="img-card">
+                <img
+                  src="./../assets/inicio/imagen libro más vendido.png"
+                  alt="Más vendido 1"
+                />
+              </div>
+              <div class="info-card">
+                <p class="count">🛍️ 0.0k</p>
+                <h3 class="title">Título del libro</h3>
+                <p class="name">John Doe</p>
+                <p class="price">$ 0000</p>
+                <div class="buttons">
+                  <button class="buy-button">Comprar</button>
+                  <button class="car-button">Añadir a carrito</button>
+                </div>
+                <a href="#">Ver más ></a>
+              </div>
+            </div>
+            <div class="book-card">
+              <div class="img-card">
+                <img
+                  src="./../assets/inicio/imagen libro más vendido.png"
+                  alt="Más vendido 1"
+                />
+              </div>
+              <div class="info-card">
+                <p class="count">🛍️ 0.0k</p>
+                <h3 class="title">Título del libro</h3>
+                <p class="name">John Doe</p>
+                <p class="price">$ 0000</p>
+                <div class="buttons">
+                  <button class="buy-button">Comprar</button>
+                  <button class="car-button">Añadir a carrito</button>
+                </div>
+                <a href="#">Ver más ></a>
+              </div>
+            </div>
+            <div class="book-card">
+              <div class="img-card">
+                <img
+                  src="./../assets/inicio/imagen libro más vendido.png"
+                  alt="Más vendido 1"
+                />
+              </div>
+              <div class="info-card">
+                <p class="count">🛍️ 0.0k</p>
+                <h3 class="title">Título del libro</h3>
+                <p class="name">John Doe</p>
+                <p class="price">$ 0000</p>
+                <div class="buttons">
+                  <button class="buy-button">Comprar</button>
+                  <button class="car-button">Añadir a carrito</button>
+                </div>
+                <a href="#">Ver más ></a>
+              </div>
+            </div>
           </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/Rider-000000.svg?style=for-the-badge&amp;logo=Rider&amp;logoColor=white&amp;color=black&amp;labelColor=crimson"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/webstorm-143?style=for-the-badge&amp;logo=webstorm&amp;logoColor=white&amp;color=black"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/pycharm-143?style=for-the-badge&amp;logo=pycharm&amp;logoColor=black&amp;color=black&amp;labelColor=green"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&amp;logo=git&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&amp;logo=node.js&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/Qt-%23217346.svg?style=for-the-badge&amp;logo=Qt&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&amp;logo=TensorFlow&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&amp;logo=numpy&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&amp;logo=PyTorch&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&amp;logo=markdown&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&amp;logo=latex&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
+          <!-- <a href="#">Ver todas ></a> -->
+        </div>
+      </section>
+      <!-- PUBLISHERS -->
+      <section class="publishers-section">
+        <h2>Editoriales disponibles</h2>
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&amp;logo=figma&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/Rider-000000.svg?style=for-the-badge&amp;logo=Rider&amp;logoColor=white&amp;color=black&amp;labelColor=crimson"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/webstorm-143?style=for-the-badge&amp;logo=webstorm&amp;logoColor=white&amp;color=black"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/pycharm-143?style=for-the-badge&amp;logo=pycharm&amp;logoColor=black&amp;color=black&amp;labelColor=green"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&amp;logo=git&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&amp;logo=node.js&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/Qt-%23217346.svg?style=for-the-badge&amp;logo=Qt&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&amp;logo=TensorFlow&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&amp;logo=numpy&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&amp;logo=PyTorch&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&amp;logo=markdown&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&amp;logo=latex&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
 
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/perl-%2339457E.svg?style=for-the-badge&amp;logo=perl&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&amp;logo=java&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&amp;logo=c-sharp&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&amp;logo=python&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&amp;logo=SASS&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&amp;logo=mongodb&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&amp;logo=figma&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/Rider-000000.svg?style=for-the-badge&amp;logo=Rider&amp;logoColor=white&amp;color=black&amp;labelColor=crimson"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/webstorm-143?style=for-the-badge&amp;logo=webstorm&amp;logoColor=white&amp;color=black"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/pycharm-143?style=for-the-badge&amp;logo=pycharm&amp;logoColor=black&amp;color=black&amp;labelColor=green"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&amp;logo=git&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&amp;logo=node.js&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/Qt-%23217346.svg?style=for-the-badge&amp;logo=Qt&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&amp;logo=TensorFlow&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&amp;logo=numpy&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&amp;logo=PyTorch&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&amp;logo=markdown&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&amp;logo=latex&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://camo.githubusercontent.com/e922b45bfb79029cf4436e255b0d17b00b651e13b24f1751a9f87b14055fb4b1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a7570797465722d2532334641304630302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d6a757079746572266c6f676f436f6c6f723d7768697465"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/perl-%2339457E.svg?style=for-the-badge&amp;logo=perl&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&amp;logo=java&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&amp;logo=c-sharp&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&amp;logo=python&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&amp;logo=SASS&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E"
-              alt="imageforslider"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&amp;logo=mongodb&amp;logoColor=white"
-              alt="imageforslider"
-            />
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/perl-%2339457E.svg?style=for-the-badge&amp;logo=perl&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&amp;logo=java&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&amp;logo=c-sharp&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&amp;logo=python&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&amp;logo=SASS&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&amp;logo=mongodb&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&amp;logo=figma&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/Rider-000000.svg?style=for-the-badge&amp;logo=Rider&amp;logoColor=white&amp;color=black&amp;labelColor=crimson"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/webstorm-143?style=for-the-badge&amp;logo=webstorm&amp;logoColor=white&amp;color=black"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/pycharm-143?style=for-the-badge&amp;logo=pycharm&amp;logoColor=black&amp;color=black&amp;labelColor=green"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&amp;logo=git&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&amp;logo=node.js&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/Qt-%23217346.svg?style=for-the-badge&amp;logo=Qt&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&amp;logo=TensorFlow&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&amp;logo=numpy&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&amp;logo=PyTorch&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&amp;logo=markdown&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&amp;logo=latex&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://camo.githubusercontent.com/e922b45bfb79029cf4436e255b0d17b00b651e13b24f1751a9f87b14055fb4b1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a7570797465722d2532334641304630302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d6a757079746572266c6f676f436f6c6f723d7768697465"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/perl-%2339457E.svg?style=for-the-badge&amp;logo=perl&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&amp;logo=java&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&amp;logo=c-sharp&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&amp;logo=python&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&amp;logo=SASS&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E"
+                alt="imageforslider"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&amp;logo=mongodb&amp;logoColor=white"
+                alt="imageforslider"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- PODER DE LA LECTURA -->
-    <section class="poderDeLaLectura-section"></section>
-    <!-- SUSCRIPTION -->
-    <section class="subscription-section">
-      <div class="subscription-container">
-        <h2>Suscríbete para recibir actualizaciones o nuevos lanzamientos</h2>
-        <form class="subscription-form">
-          <input
-            type="email"
-            placeholder="Escribe tu correo electrónico"
-            required
-          />
-          <button type="submit">Suscribirse</button>
-        </form>
-      </div>
-    </section>
+      </section>
+      <!-- PODER DE LA LECTURA -->
+      <section class="poderDeLaLectura-section"></section>
+      <!-- SUSCRIPTION -->
+      <section class="subscription-section">
+        <div class="subscription-container">
+          <h2>Suscríbete para recibir actualizaciones o nuevos lanzamientos</h2>
+          <form class="subscription-form">
+            <input
+              type="email"
+              placeholder="Escribe tu correo electrónico"
+              required
+            />
+            <button type="submit">Suscribirse</button>
+          </form>
+        </div>
+      </section>
+    </main>
     <!-- FOOTER -->
     <footer>
       <div class="footer-top">
@@ -606,7 +631,15 @@
           }
         });
     </script>
-    <footer></footer>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
 
     <script src="./script.js"></script>
   </body>

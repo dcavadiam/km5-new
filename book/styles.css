@@ -1,0 +1,45 @@
+.book-view-section {
+  background-image: url("./../assets/vista-libro/library-with-books\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  gap: 20px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800%;
+  max-width: 1080px;
+  background-color: linear-gradient(
+    90deg,
+    rgba(191, 190, 190, 1) 0%,
+    rgba(54, 51, 51, 1) 100%
+  );
+  backdrop-filter: blur(20px); /* Efecto blur */
+  -webkit-backdrop-filter: blur(20px); /* Efecto blur para navegadores Webkit */
+}
+
+.book-view-section h2 {
+  font-size: 24px;
+  color: #333;
+}
+.book-view-section .content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.book-view-section .book-view-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
