@@ -41,6 +41,7 @@ header {
   -webkit-backdrop-filter: blur(20px); /* Efecto blur para navegadores Webkit */
   z-index: 999;
   border-bottom: #f0f0f032 solid 1px;
+ 
 }
 
 .logo-nav {
