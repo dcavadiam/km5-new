@@ -7,17 +7,11 @@
     <link rel="icon" type="image/x-icon" href="../assets/favicon.png" />
     <link rel="stylesheet" href="../global/style.css" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <!-- HEADER -->
     <header>
-      <nav class="navbar">
+      <nav class="navbar" id="secondary">
         <div class="logo-nav">
           <div class="logo-km5">
             <img src="../assets/logo-km5.png" alt="logo km5" />
@@ -54,14 +48,39 @@
               <img src="./../assets/inicio/image 13.png" alt="Libro 1" />
             </div>
             <div class="book-view-info">
-              <h3>Título del libro</h3>
-              <p>Autor: John Doe</p>
-              <p>Precio: $0000000</p>
+              <span class="price"> $0000000</span>
+              <h1 class="book-title"><i>Título del libro</i></h1>
+              <p class="author">Autor: John Doe</p>
+              <p class="description">
+                <strong>Reseña:</strong> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quasi, possimus dignissimos, odit corporis,
+                suscipit sed tempora error dolores culpa eius harum iusto magni
+                voluptate nam aliquam ea temporibus dolorem? Mollitia.
+              </p>
+              <div class="barcode">
+                <img src="../assets/vista-libro/codigo-de-barras.png" alt="" />
+                <div class="barcode-info">
+                  <p>000000000000000</p>
+                  <p>ISBN 0000000000000000</p>
+                </div>
+              </div>
+              <h2><i>Información adicional</i></h2>
+              <div class="aditional-info-container">
+                <small>Stock: 0</small>
+              <small>Tiempo de entrega: 0</small>
+              <small>Edición: 0</small>
+              <small>Formato: 0</small>
+              <small>Páginas: 0</small>
+              <small>Peso: 0</small>
+              <span class="category">Categoria</span>
+              </div>
             </div>
           </div>
+            <h2><i>Tambien te puede interesar</i></h2>
           <div class="recomendation-row">
+          
             <div class="books-container">
-              <div class="books-list" id="novedades">
+              <div class="books-row">
                 <div
                   class="book"
                   style="
