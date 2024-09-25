@@ -20,7 +20,7 @@ h2 {
 }
 
 .content-container {
-  padding: 1rem 2rem;
+  padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,19 +37,15 @@ h2 {
   border-radius: 20px;
 }
 
-.book-view-image img {
-  border-radius: 20px;
-}
-
 .book-view-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 1080px;
-  padding: 2rem 0;
   gap: 20px;
   color: #fff;
+  margin-bottom: 1rem;
 }
 
 .price {
@@ -62,7 +58,7 @@ h2 {
 }
 
 .book-title {
-  font-size: 24px;
+  font-size: 28px;
   text-transform: uppercase;
 }
 
@@ -95,7 +91,7 @@ h2 {
 }
 
 .book-view-container h2 {
-  font-size: 22px;
+  font-size: 20px;
   color: #fff;
 }
 
@@ -111,6 +107,8 @@ h2 {
   font-weight: lighter;
   padding: 10px 20px;
   margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .book-view-image {
@@ -121,6 +119,35 @@ h2 {
   max-width: 1080px;
   margin: 0 auto;
   gap: 20px;
+  position: relative;
+}
+
+.book-view-image .status {
+  position: absolute;
+  bottom: 0;
+  background-color: #148acb;
+  color: white;
+  text-align: center;
+  width: 270px;
+  padding: 15px;
+  border-radius: 0 0 20px 20px;
+  z-index: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.status.unavailable {
+  background-color: #A70000;
+}
+
+.status.available {
+  background-color: #18AC00;
+}
+
+.book-view-image img {
+  width: 300px;
+  border-radius: 20px;
 }
 
 .recomendation-row {
@@ -141,8 +168,8 @@ h2 {
 
 .book {
   text-align: center;
-  width: 200px;
-  height: 300px;
+  width: 160px;
+  height: 260px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -153,6 +180,23 @@ h2 {
   position: relative;
   overflow: hidden;
   border-radius: 20px;
+  padding: 1rem;
+}
+
+.book h3,
+.book p,
+.book a {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  font-size: 14px;
+}
+
+.book a {
+  text-decoration: none;
+  color: #92c022;
+
+  font-weight: 600;
 }
 
 .book::before {
@@ -163,13 +207,33 @@ h2 {
   width: 100%;
   height: 100%;
   background: linear-gradient(#e6646400, #000000);
-  z-index: 1;
+  z-index: 01;
 }
 
-@media screen and (width < 780px) {
+@media screen and (width < 700px) {
+  .book-view-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (width < 660px) {
+  .book-view-section {
+    padding: 5rem 0 2rem 0;
+  }
+}
+
+@media screen and (440px < width < 940px) {
   .books-row {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
+    justify-items: center;
+  }
+}
+
+@media screen and (width < 440px) {
+  .books-row {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
     justify-items: center;
   }
 }

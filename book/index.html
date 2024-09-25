@@ -9,6 +9,25 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div id="mySidenav" class="sidenav white">
+      <a href="javascript:void(0)" class="closebtn white" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="logo-km5">
+        <img src="../assets/logo-km5.png" alt="logo km5" />
+      </div>
+      <a href="#" class="white">Novedades</a>
+      <a href="#" class="white">Senderos</a>
+      <a href="#" class="white">Top 10</a>
+      <a href="#" class="white">Nightstanders</a>
+      <div class="carrito">
+        <img
+          src="../assets/nav/carrito-de-compras.png"
+          alt="carro de compras"
+        />
+      </div>
+    </div>
+    <span class="button-sidenav white" onclick="openNav()">&#9776;</span>
     <!-- HEADER -->
     <header>
       <nav class="navbar" id="secondary">
@@ -45,7 +64,12 @@
         <div class="content-container">
           <div class="book-view-container">
             <div class="book-view-image">
-              <img src="./../assets/inicio/image 13.png" alt="Libro 1" />
+              <picture>
+                <img src="../assets/inicio/image 13.png" alt="Libro 1" />
+              </picture>
+              <span class="status unavailable">
+                No disponible
+              </span>
             </div>
             <div class="book-view-info">
               <span class="price"> $0000000</span>
@@ -67,18 +91,17 @@
               <h2><i>Información adicional</i></h2>
               <div class="aditional-info-container">
                 <small>Stock: 0</small>
-              <small>Tiempo de entrega: 0</small>
-              <small>Edición: 0</small>
-              <small>Formato: 0</small>
-              <small>Páginas: 0</small>
-              <small>Peso: 0</small>
-              <span class="category">Categoria</span>
+                <small>Tiempo de entrega: 0</small>
+                <small>Edición: 0</small>
+                <small>Formato: 0</small>
+                <small>Páginas: 0</small>
+                <small>Peso: 0</small>
+                <span class="category">Categoria</span>
               </div>
             </div>
           </div>
-            <h2><i>Tambien te puede interesar</i></h2>
+          <h2><i>Tambien te puede interesar</i></h2>
           <div class="recomendation-row">
-          
             <div class="books-container">
               <div class="books-row">
                 <div
@@ -176,4 +199,13 @@
       </div>
     </footer>
   </body>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
 </html>

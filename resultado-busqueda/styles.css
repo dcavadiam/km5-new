@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1280px;
+  margin: 6rem auto;
+}
+
+.sidebar {
+  width: 20%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar li:hover {
+    transform: translate(8px, 0px);
+    cursor: pointer;
+}
+
+.sidebar li a{
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+}
+
+.sidebar li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.sidebar h2,
+.sidebar a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.sidebar svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.main {
+  width: 80%;
+  height: 100%;
+  padding: 2rem;
+  overflow-y: scroll;
+}
