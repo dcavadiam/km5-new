@@ -145,6 +145,7 @@ header {
     font-size: 36px;
     margin-left: 50px;
     cursor: pointer;
+    z-index: 1;
   }
   .banner-section {
     padding: 2rem 2rem;
