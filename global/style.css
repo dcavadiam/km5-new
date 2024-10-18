@@ -45,7 +45,7 @@ header {
   padding: 1rem 2rem;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
   background-color: rgba(255, 255, 255, 0);
   backdrop-filter: blur(20px); /* Efecto blur */
   -webkit-backdrop-filter: blur(20px); /* Efecto blur para navegadores Webkit */
@@ -56,6 +56,7 @@ header {
 .logo-nav {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .navbar .logo-nav .logo-km5 img {
@@ -123,6 +124,7 @@ header {
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
+  cursor: pointer;
 }
 
 .sidenav .logo-km5 img {

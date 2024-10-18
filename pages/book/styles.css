@@ -8,7 +8,7 @@ h2 {
 }
 
 .book-view-section {
-  background-image: url("./../assets/vista-libro/library-with-books.png");
+  background-image: url("../../assets/vista-libro/library-with-books.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
