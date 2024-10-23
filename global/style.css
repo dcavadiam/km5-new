@@ -75,8 +75,32 @@ header {
   font-weight: 600;
 }
 
+.navbar .carrito {
+  position: relative;
+}
+
 .navbar .carrito img {
   width: 30px;
+}
+
+.navbar .carrito span {
+  display: none;
+  width: 10px;
+  height: 10px;
+  background-color: #008ed5;
+  color: #fff;
+  padding: 4px;
+  border-radius: 50px;
+  z-index: 1;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.mostrar-carrito {
+  display: block;
+  position: absolute;
+  top: -6px;
+  right: -10px;
 }
 
 /* side navbar */
@@ -168,17 +192,14 @@ header {
 }
 
 /* FOOTER */
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 footer {
   background-color: #254152;
   color: white;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .footer-top,

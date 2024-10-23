@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Librería Online KM5</title>
+    <link rel="icon" type="image/x-icon" href="../../../assets/favicon.png" />
+    <link rel="stylesheet" href="../../../global/style.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="/../../global/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav" id="primary">
+      <a href="javascript:void(0)" class="closebtn black" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="logo-km5" onclick="location.href='/pages/inicio/index.html'">
+        <img src="../../../assets/logo-km5.png" alt="logo km5" />
+      </div>
+      <a href="#" class="black">Novedades</a>
+      <a href="#" class="black">Senderos</a>
+      <a href="#" class="black">Top 10</a>
+      <a href="#" class="black">Nightstanders</a>
+      <div class="carrito">
+        <img
+          src="../../../assets/nav/carrito-de-compras.png"
+          alt="carro de compras"
+        />
+        <span> 1 </span>
+      </div>
+    </div>
+    <span class="button-sidenav" onclick="openNav()">&#9776;</span>
+
+    <header>
+      <nav class="navbar">
+        <div class="logo-nav">
+          <div
+            class="logo-km5"
+            onclick="location.href='/pages/inicio/index.html'"
+          >
+            <img src="../../../assets/logo-km5.png" alt="logo km5" />
+          </div>
+          <ul class="page-list">
+            <li>
+              <a class="black" href="/pages/novedades/index.html">Novedades</a>
+            </li>
+            <li>
+              <a class="black" href="/pages/senderos/index.html">Senderos</a>
+            </li>
+            <li>
+              <a class="black" href="/pages/top-10/index.html">Top 10</a>
+            </li>
+            <li>
+              <a class="black" href="/pages/nightstanders/index.html"
+                >Nightstanders</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="carrito">
+          <img
+            src="../../../assets/nav/carrito-de-compras.png"
+            alt="carro de compras"
+          />
+          <span> 1 </span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- PROGRESS BAR -->
+      <section class="pasos">
+        <div class="progress-bar">
+          <div class="step">
+            <div class="circle">1</div>
+            <p>Carrito</p>
+          </div>
+          <div class="step">
+            <div class="circle">2</div>
+            <p>Método de envío</p>
+          </div>
+          <div class="step">
+            <div class="circle">3</div>
+            <p>Forma de pago</p>
+          </div>
+          <div class="step completed">
+            <div class="circle">4</div>
+            <p>Pago</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGO -->
+      <section class="resumen">
+        <section class="pedido">
+          <h2>Resumen del pedido</h2>
+          <div class="pedido-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Título</th>
+                  <th>Cantidad</th>
+                  <th>Precio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Voces de una Historia Colectiva. Tomo 1: los Fundadores
+                    (1950-1976)<br />Universidad Del Norte
+                  </td>
+                  <td>1</td>
+                  <td>$85,000.00</td>
+                </tr>
+                <tr>
+                  <td colspan="2">Subtotal</td>
+                  <td>$85,000.00</td>
+                </tr>
+                <tr>
+                  <td colspan="2">Gastos de envío y seguro</td>
+                  <td>$4,380.00</td>
+                </tr>
+                <tr class="total-row">
+                  <td colspan="2">TOTAL</td>
+                  <td>$89,380.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="entrega">
+          <h2>Resumen del pedido</h2>
+          <div class="entrega-container">
+            <table>
+              <tbody>
+                <tr>
+                  <td><strong>Nombre:</strong></td>
+                  <td>Diego Cavadia</td>
+                </tr>
+                <tr>
+                  <td><strong>Email:</strong></td>
+                  <td>dcavadia@uninorte.edu.co</td>
+                </tr>
+                <tr>
+                  <td><strong>Teléfono:</strong></td>
+                  <td>300000000</td>
+                </tr>
+                <tr>
+                  <td><strong>Dirección:</strong></td>
+                  <td>cra ........</td>
+                </tr>
+                <tr>
+                  <td><strong>Código Postal:</strong></td>
+                  <td>00000000</td>
+                </tr>
+                <tr>
+                  <td><strong>País:</strong></td>
+                  <td>Colombia</td>
+                </tr>
+                <tr>
+                  <td><strong>Departamento:</strong></td>
+                  <td>Atlántico</td>
+                </tr>
+                <tr>
+                  <td><strong>Ciudad:</strong></td>
+                  <td>Barranquilla</td>
+                </tr>
+                <tr>
+                  <td><strong>Forma de pago:</strong></td>
+                  <td>Place to pay</td>
+                </tr>
+                <tr>
+                  <td><strong>Forma de envío:</strong></td>
+                  <td>Servientrega</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <div class="pagar">
+          <h2>Pagar</h2>
+          <img
+            src="../../../assets/carrito/placetopay.webp"
+            alt="logo de placetopay"
+            onclick=""
+          />
+          <p>Realizar Pago. Conozco y acepto los <a href="/pages/terminos/index.html">Términos y condiciones</a></p>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <a href="#">PROMOCIONES</a>
+        <a href="#">EVENTOS</a>
+        <a href="#">QUIENES SOMOS</a>
+        <a href="#">TUS BENEFICIOS</a>
+        <a href="#">NOTICIAS</a>
+        <a href="#">LEGALES</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer-middle">
+        <p>
+          Buzón de sugerencias ~~ NORMATIVIDAD ~~ Derechos pecuniarios ~~
+          Estatuto general ~~ Reglamento Estudiantil ~~ Estatuto del docente ~~
+          Estatutos de Bienestar Institucional
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <div class="logo-section">
+          <img
+            src="../../../assets/logo-uninorte.png"
+            alt="Universidad del Norte"
+          />
+          <img src="logo_dunord.png" alt="Logo duNord" />
+        </div>
+        <p>
+          Km.5 Vía Puerto Colombia - Tel.(57)(5)3509509 Área Metropolitana de
+          Barranquilla, Colombia © Universidad del Norte
+        </p>
+        <div class="social-icons">
+          <a href="#"
+            ><img src="../../../assets/footer/facebook.png" alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img src="../../../assets/footer/x.png" alt="Twitter"
+          /></a>
+          <a href="#"
+            ><img src="../../../assets/footer/instagram.png" alt="Instagram"
+          /></a>
+          <a href="#"
+            ><img src="../../../assets/footer/pinterest.png" alt="Pinterest"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

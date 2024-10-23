@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Librería Online KM5</title>
+    <link rel="icon" type="image/x-icon" href="../../../assets/favicon.png" />
+    <link rel="stylesheet" href="../../../global/style.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="/../../global/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav" id="primary">
+      <a href="javascript:void(0)" class="closebtn black" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="logo-km5" onclick="location.href='/pages/inicio/index.html'">
+        <img src="../../../assets/logo-km5.png" alt="logo km5" />
+      </div>
+      <a href="#" class="black">Novedades</a>
+      <a href="#" class="black">Senderos</a>
+      <a href="#" class="black">Top 10</a>
+      <a href="#" class="black">Nightstanders</a>
+      <div class="carrito">
+        <img
+          src="../../../assets/nav/carrito-de-compras.png"
+          alt="carro de compras"
+        />
+        <span> 1 </span>
+      </div>
+    </div>
+    <span class="button-sidenav" onclick="openNav()">&#9776;</span>
+
+    <header>
+      <nav class="navbar">
+        <div class="logo-nav">
+          <div
+            class="logo-km5"
+            onclick="location.href='/pages/inicio/index.html'"
+          >
+            <img src="../../../assets/logo-km5.png" alt="logo km5" />
+          </div>
+          <ul class="page-list">
+            <li>
+              <a class="black" href="/pages/novedades/index.html">Novedades</a>
+            </li>
+            <li>
+              <a class="black" href="/pages/senderos/index.html">Senderos</a>
+            </li>
+            <li>
+              <a class="black" href="/pages/top-10/index.html">Top 10</a>
+            </li>
+            <li>
+              <a class="black" href="/pages/nightstanders/index.html"
+                >Nightstanders</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="carrito">
+          <img
+            src="../../../assets/nav/carrito-de-compras.png"
+            alt="carro de compras"
+          />
+          <span> 1 </span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- PROGRESS BAR -->
+      <section class="pasos">
+        <div class="progress-bar">
+          <div class="step completed">
+            <div class="circle">1</div>
+            <p>Carrito</p>
+          </div>
+          <div class="step">
+            <div class="circle">2</div>
+            <p>Método de envío</p>
+          </div>
+          <div class="step">
+            <div class="circle">3</div>
+            <p>Forma de pago</p>
+          </div>
+          <div class="step">
+            <div class="circle">4</div>
+            <p>Pago</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPRA -->
+      <h2>Carrito</h2>
+      <section class="compra">
+        <div class="articulos">
+          <div class="articulo">
+            <div class="libro">
+              <img
+                src="../../../assets/inicio/image 13.png"
+                alt="imagen del libro"
+              />
+              <div class="info">
+                <span class="title">Titulo del libro</span>
+                <span class="autor">Autor</span>
+              </div>
+            </div>
+            <div class="cantidad">
+              <div class="etiqueta-descuento">
+                <div class="descuento">50% dcto.</div>
+                <div class="triangulo-descuento"></div>
+              </div>
+              <div class="precio-unitario">
+                <span class="precio-sin-descuento">$ 228000</span>
+                <span class="precio-con-descuento">$ 114000</span>
+              </div>
+              <input
+                type="number"
+                name="cantidad"
+                id="cantidad"
+                placeholder="0"
+              />
+              <span class="total">$0</span>
+            </div>
+            <span class="eliminar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x-bind:width="size"
+                x-bind:height="size"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                x-bind:stroke-width="stroke"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="24"
+                height="24"
+                stroke-width="2"
+              >
+                <path d="M9 9l6 6m0 -6l-6 6"></path>
+              </svg>
+              Eliminar libro
+            </span>
+          </div>
+        </div>
+        <aside>
+          <div class="subtotal">
+            <span>Subtotal: $0</span>
+            <button id="boton-finalizar">Finalizar compra</button>
+          </div>
+        </aside>
+      </section>
+
+      <!-- DATA -->
+      <section class="data hidden">
+        <form action="">
+          <h2>Datos de facturación</h2>
+          <div class="facturacion">
+            <label for="direccion">Dirección</label>
+            <input
+              type="text"
+              name="direccion"
+              id="direccion"
+              placeholder="Dirección"
+            />
+            <label for="postal">Código postal</label>
+            <input
+              type="text"
+              name="postal"
+              id="postal"
+              placeholder="Código postal"
+            />
+            <label for="pais">País</label>
+            <select name="pais" id="pais">
+              <option value="Colombia">Colombia</option>
+              <option value="Venezuela">Venezuela</option>
+              <option value="Ecuador">Ecuador</option>
+              <option value="Perú">Perú</option>
+            </select>
+            <label for="depto">Departamento</label>
+            <select name="depto" id="depto">
+              <option value="Departamento">Departamento</option>
+              <option value="Departamento">Departamento</option>
+              <option value="Departamento">Departamento</option>
+            </select>
+            <label for="ciudad">Ciudad</label>
+            <select name="ciudad" id="ciudad">
+              <option value="Ciudad">Ciudad</option>
+              <option value="Ciudad">Ciudad</option>
+              <option value="Ciudad">Ciudad</option>
+              <option value="Ciudad">Ciudad</option>
+            </select>
+            <label for="telefono">Teléfono</label>
+            <input
+              type="text"
+              name="telefono"
+              id="telefono"
+              placeholder="Teléfono"
+            />
+            <div style="display: flex">
+              <input type="checkbox" name="datos-entrega" id="datos-entrega" />
+              Los datos de entrega son iguales a los de facturación
+            </div>
+          </div>
+          <div class="entrega" id="entrega">
+            <label for="direccion-entrega">Dirección</label>
+            <input
+              type="text"
+              name="direccion-entrega"
+              id="direccion-entrega"
+              placeholder="Dirección"
+            />
+            <label for="postal-entrega">Código postal</label>
+            <input
+              type="text"
+              name="postal-entrega"
+              id="postal-entrega"
+              placeholder="Código postal"
+            />
+            <label for="pais-entrega">País</label>
+            <select name="pais-entrega" id="pais-entrega">
+              <option value="Colombia">Colombia</option>
+              <option value="Venezuela">Venezuela</option>
+              <option value="Ecuador">Ecuador</option>
+              <option value="Perú">Perú</option>
+            </select>
+            <label for="depto-entrega">Departamento</label>
+            <select name="depto-entrega" id="depto-entrega">
+              <option value="Departamento">Departamento</option>
+              <option value="Departamento">Departamento</option>
+              <option value="Departamento">Departamento</option>
+            </select>
+            <label for="ciudad-entrega">Ciudad</label>
+            <select name="ciudad-entrega" id="ciudad-entrega">
+              <option value="Ciudad">Ciudad</option>
+              <option value="Ciudad">Ciudad</option>
+              <option value="Ciudad">Ciudad</option>
+              <option value="Ciudad">Ciudad</option>
+            </select>
+            <label for="telefono-entrega">Teléfono</label>
+            <input
+              type="text"
+              name="telefono-entrega"
+              id="telefono-entrega"
+              placeholder="Teléfono"
+            />
+          </div>
+          <div class="comentario">
+            <label for="comentario-entrega"
+              >Comentarios / Información adicional</label
+            >
+            <textarea
+              name="comentario-entrega"
+              id="comentario-entrega"
+              placeholder="Comentarios / Información adicional"
+            ></textarea>
+          </div>
+        </form>
+        <button class="continuar" onclick="location.href='../envio/index.html'">
+          Continuar
+        </button>
+      </section>
+
+      <!-- WISHLIST -->
+      <section class="wishlist"></section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <a href="#">PROMOCIONES</a>
+        <a href="#">EVENTOS</a>
+        <a href="#">QUIENES SOMOS</a>
+        <a href="#">TUS BENEFICIOS</a>
+        <a href="#">NOTICIAS</a>
+        <a href="#">LEGALES</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer-middle">
+        <p>
+          Buzón de sugerencias ~~ NORMATIVIDAD ~~ Derechos pecuniarios ~~
+          Estatuto general ~~ Reglamento Estudiantil ~~ Estatuto del docente ~~
+          Estatutos de Bienestar Institucional
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <div class="logo-section">
+          <img
+            src="../../../assets/logo-uninorte.png"
+            alt="Universidad del Norte"
+          />
+          <img src="logo_dunord.png" alt="Logo duNord" />
+        </div>
+        <p>
+          Km.5 Vía Puerto Colombia - Tel.(57)(5)3509509 Área Metropolitana de
+          Barranquilla, Colombia © Universidad del Norte
+        </p>
+        <div class="social-icons">
+          <a href="#"
+            ><img src="../../../assets/footer/facebook.png" alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img src="../../../assets/footer/x.png" alt="Twitter"
+          /></a>
+          <a href="#"
+            ><img src="../../../assets/footer/instagram.png" alt="Instagram"
+          /></a>
+          <a href="#"
+            ><img src="../../../assets/footer/pinterest.png" alt="Pinterest"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

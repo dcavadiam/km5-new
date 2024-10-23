@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Librería Online KM5</title>
+    <link rel="icon" type="image/x-icon" href="../../../assets/favicon.png" />
+    <link rel="stylesheet" href="../../../global/style.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="/../../global/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav" id="primary">
+      <a href="javascript:void(0)" class="closebtn black" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="logo-km5" onclick="location.href='/pages/inicio/index.html'">
+        <img src="../../../assets/logo-km5.png" alt="logo km5" />
+      </div>
+      <a href="#" class="black">Novedades</a>
+      <a href="#" class="black">Senderos</a>
+      <a href="#" class="black">Top 10</a>
+      <a href="#" class="black">Nightstanders</a>
+      <div class="carrito">
+        <img
+          src="../../../assets/nav/carrito-de-compras.png"
+          alt="carro de compras"
+        />
+        <span> 1 </span>
+      </div>
+    </div>
+    <span class="button-sidenav" onclick="openNav()">&#9776;</span>
+
+    <header>
+      <nav class="navbar">
+        <div class="logo-nav">
+          <div
+            class="logo-km5"
+            onclick="location.href='/pages/inicio/index.html'"
+          >
+            <img src="../../../assets/logo-km5.png" alt="logo km5" />
+          </div>
+          <ul class="page-list">
+            <li>
+              <a class="black" href="/pages/novedades/index.html">Novedades</a>
+            </li>
+            <li>
+              <a class="black" href="/pages/senderos/index.html">Senderos</a>
+            </li>
+            <li>
+              <a class="black" href="/pages/top-10/index.html">Top 10</a>
+            </li>
+            <li>
+              <a class="black" href="/pages/nightstanders/index.html"
+                >Nightstanders</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="carrito">
+          <img
+            src="../../../assets/nav/carrito-de-compras.png"
+            alt="carro de compras"
+          />
+          <span> 1 </span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- PROGRESS BAR -->
+      <section class="pasos">
+        <div class="progress-bar">
+          <div class="step">
+            <div class="circle">1</div>
+            <p>Carrito</p>
+          </div>
+          <div class="step completed">
+            <div class="circle">2</div>
+            <p>Método de envío</p>
+          </div>
+          <div class="step">
+            <div class="circle">3</div>
+            <p>Forma de pago</p>
+          </div>
+          <div class="step">
+            <div class="circle">4</div>
+            <p>Pago</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ENVIO -->
+      <section class="envio">
+        <h2>Método de envío</h2>
+        <form action="">
+          <div class="input-group">
+            <input type="radio" name="envio" id="servientrega" value="1" />
+            <img
+              src="../../../assets/carrito/servientrega.webp"
+              alt="logo nuevo de servientrega"
+            />
+          </div>
+          <div class="input-group">
+            <input type="radio" name="envio" id="retiro" value="2" />
+            <img
+              src="../../../assets/carrito/punto-fisico.webp"
+              alt="punto físico de venta"
+            />
+          </div>
+        </form>
+        <button type="submit" onclick="location.href='../pago/index.html'">
+          Continuar
+        </button>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <a href="#">PROMOCIONES</a>
+        <a href="#">EVENTOS</a>
+        <a href="#">QUIENES SOMOS</a>
+        <a href="#">TUS BENEFICIOS</a>
+        <a href="#">NOTICIAS</a>
+        <a href="#">LEGALES</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer-middle">
+        <p>
+          Buzón de sugerencias ~~ NORMATIVIDAD ~~ Derechos pecuniarios ~~
+          Estatuto general ~~ Reglamento Estudiantil ~~ Estatuto del docente ~~
+          Estatutos de Bienestar Institucional
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <div class="logo-section">
+          <img
+            src="../../../assets/logo-uninorte.png"
+            alt="Universidad del Norte"
+          />
+          <img src="logo_dunord.png" alt="Logo duNord" />
+        </div>
+        <p>
+          Km.5 Vía Puerto Colombia - Tel.(57)(5)3509509 Área Metropolitana de
+          Barranquilla, Colombia © Universidad del Norte
+        </p>
+        <div class="social-icons">
+          <a href="#"
+            ><img src="../../../assets/footer/facebook.png" alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img src="../../../assets/footer/x.png" alt="Twitter"
+          /></a>
+          <a href="#"
+            ><img src="../../../assets/footer/instagram.png" alt="Instagram"
+          /></a>
+          <a href="#"
+            ><img src="../../../assets/footer/pinterest.png" alt="Pinterest"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
